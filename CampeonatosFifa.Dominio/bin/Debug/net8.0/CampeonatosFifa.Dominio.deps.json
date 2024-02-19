@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CampeonatosFifa.Dominio/1.0.0": {
+        "runtime": {
+          "CampeonatosFifa.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CampeonatosFifa.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
