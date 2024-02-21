@@ -1,6 +1,8 @@
 ﻿
 
 
+using Microsoft.EntityFrameworkCore;
+
 namespace CampeonatosFifa.Infraestructura.Repositorio
 {
     public class SeleccionRepositorio : ISeleccionRepositorio
@@ -23,9 +25,17 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
             return Seleccion;
         }
 
-        public Task<bool> Eliminar(int Id)
+        public async Task<bool> Eliminar(int Id)
         {
-            throw new NotImplementedException();
+            var seleccionExistente = await context.Selecciones.FindAsync(Id);
+            if (seleccionExistente == null)
+            {
+                return false;
+            }
+
+            context.Selecciones.Remove(seleccionExistente);
+            await context.SaveChangesAsync();
+            return true;
         }
 
         public async Task<Seleccion> Modificar(Seleccion Seleccion)
@@ -42,14 +52,14 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
             return seleccionExistente;
         }
 
-        public Task<Seleccion> Obtener(int Id)
+        public async Task<Seleccion> Obtener(int Id)
         {
-            throw new NotImplementedException();
+            return await context.Selecciones.FindAsync(Id);
         }
 
-        public Task<IEnumerable<Seleccion>> ObtenerTodos()
+        public async Task<IEnumerable<Seleccion>> ObtenerTodos()
         {
-            throw new NotImplementedException();
+            return await context.Selecciones.ToArrayAsync();
         }
     }
 }
