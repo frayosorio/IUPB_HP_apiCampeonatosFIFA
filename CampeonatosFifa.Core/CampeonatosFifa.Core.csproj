@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Servicios\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CampeonatosFifa.Dominio\CampeonatosFifa.Dominio.csproj" />
   </ItemGroup>
 

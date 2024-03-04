@@ -1,0 +1,6 @@
+@CampeonatosFifa.Presentacion_HostAddress = http://localhost:5290
+
+GET {{CampeonatosFifa.Presentacion_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
