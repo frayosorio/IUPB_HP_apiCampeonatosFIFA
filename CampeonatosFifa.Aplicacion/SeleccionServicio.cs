@@ -30,9 +30,9 @@
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Seleccion>> ObtenerTodos()
+        public async Task<IEnumerable<Seleccion>> ObtenerTodos()
         {
-            return repositorio.ObtenerTodos();
+            return await repositorio.ObtenerTodos();
         }
     }
 }

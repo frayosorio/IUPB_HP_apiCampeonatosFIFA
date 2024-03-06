@@ -2,6 +2,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace CampeonatosFifa.Infraestructura.Repositorio
 {

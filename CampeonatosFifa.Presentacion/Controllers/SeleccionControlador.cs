@@ -15,7 +15,7 @@
         [HttpGet("listar")]
         public async Task<ActionResult<IEnumerable<Seleccion>>> ObtenerTodos()
         {
-            return Ok(servicio.ObtenerTodos());
+            return Ok(await servicio.ObtenerTodos());
         }
 
     }
