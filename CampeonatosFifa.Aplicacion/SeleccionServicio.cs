@@ -10,9 +10,9 @@
             this.repositorio = repositorio;
         }
 
-        public Task<Seleccion> Agregar(Seleccion Seleccion)
+        public async Task<Seleccion> Agregar(Seleccion Seleccion)
         {
-            throw new NotImplementedException();
+            return await repositorio.Agregar(Seleccion);
         }
 
         public Task<bool> Eliminar(int Id)
@@ -20,14 +20,14 @@
             throw new NotImplementedException();
         }
 
-        public Task<Seleccion> Modificar(Seleccion Seleccion)
+        public async Task<Seleccion> Modificar(Seleccion Seleccion)
         {
-            throw new NotImplementedException();
+            return await repositorio.Modificar(Seleccion);
         }
 
-        public Task<Seleccion> Obtener(int Id)
+        public async Task<Seleccion> Obtener(int Id)
         {
-            throw new NotImplementedException();
+            return await repositorio.Obtener(Id);
         }
 
         public async Task<IEnumerable<Seleccion>> ObtenerTodos()

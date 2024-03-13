@@ -20,7 +20,7 @@ namespace CampeonatosFifa.Presentacion.DI
 
             //Agregar los servicios
             servicios.AddTransient<ISeleccionServicio, SeleccionServicio>();
-            //servicios.AddTransient<ICampeonatoServicio, CampeonatoServicio>();
+            servicios.AddTransient<ICampeonatoServicio, CampeonatoServicio>();
 
 
             return servicios;

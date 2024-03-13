@@ -2,6 +2,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Globalization;
 
 namespace CampeonatosFifa.Infraestructura.Repositorio
@@ -9,14 +10,12 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
     public class SeleccionRepositorio : ISeleccionRepositorio
     {
         private readonly CampeonatosFifaContext context;
-        private readonly IMapper mapper;
 
 
         public SeleccionRepositorio(CampeonatosFifaContext context,
             IMapper mapper)
         {
             this.context = context;
-            this.mapper = mapper;
         }
 
         public async Task<Seleccion> Agregar(Seleccion Seleccion)
@@ -42,15 +41,13 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
         public async Task<Seleccion> Modificar(Seleccion Seleccion)
         {
             var seleccionExistente = await context.Selecciones.FindAsync(Seleccion.Id);
-            if(seleccionExistente == null)
+            if (seleccionExistente == null)
             {
                 return null;
             }
-
-            mapper.Map(Seleccion, seleccionExistente);
+            context.Entry(seleccionExistente).CurrentValues.SetValues(Seleccion);
             await context.SaveChangesAsync();
-
-            return seleccionExistente;
+            return await context.Selecciones.FindAsync(Seleccion.Id);
         }
 
         public async Task<Seleccion> Obtener(int Id)

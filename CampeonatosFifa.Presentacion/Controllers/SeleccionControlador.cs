@@ -18,5 +18,23 @@
             return Ok(await servicio.ObtenerTodos());
         }
 
+        [HttpGet("obtener/{Id}")]
+        public async Task<ActionResult<Seleccion>> Obtener(int Id)
+        {
+            return Ok(await servicio.Obtener(Id));
+        }
+
+        [HttpPost("agregar")]
+        public async Task<ActionResult<Seleccion>> Agregar([FromBody] Seleccion Seleccion)
+        {
+            return Ok(await servicio.Agregar(Seleccion));
+        }
+
+        [HttpPut("modificar")]
+        public async Task<ActionResult<Seleccion>> Modificar([FromBody] Seleccion Seleccion)
+        {
+            return Ok(await servicio.Modificar(Seleccion));
+        }
+
     }
 }

@@ -7,14 +7,11 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
     public class CampeonatoRepositorio : ICampeonatoRepositorio
     {
         private CampeonatosFifaContext context;
-        private IMapper mapper;
 
 
-        public CampeonatoRepositorio(CampeonatosFifaContext context,
-            IMapper mapper)
+        public CampeonatoRepositorio(CampeonatosFifaContext context)
         {
             this.context = context;
-            this.mapper = mapper;
         }
 
         public async Task<Campeonato> Agregar(Campeonato Campeonato)
@@ -39,16 +36,14 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
 
         public async Task<Campeonato> Modificar(Campeonato Campeonato)
         {
-            var campeonatoExistente = await context.Campeonatos.FindAsync(Campeonato.Id);
-            if (campeonatoExistente == null)
+            var seleccionExistente = await context.Campeonatos.FindAsync(Campeonato.Id);
+            if (seleccionExistente == null)
             {
                 return null;
             }
-
-            mapper.Map(Campeonato, campeonatoExistente);
+            context.Entry(seleccionExistente).CurrentValues.SetValues(Campeonato);
             await context.SaveChangesAsync();
-
-            return campeonatoExistente;
+            return await context.Campeonatos.FindAsync(Campeonato.Id);
         }
 
         public async Task<Campeonato> Obtener(int Id)
