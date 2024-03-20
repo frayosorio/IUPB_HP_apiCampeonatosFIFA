@@ -36,5 +36,11 @@
             return Ok(await servicio.Modificar(Seleccion));
         }
 
+        [HttpDelete("eliminar/{Id}")]
+        public async Task<ActionResult<bool>> Eliminar(int Id)
+        {
+            return Ok(await servicio.Eliminar(Id));
+        }
+
     }
 }

@@ -36,12 +36,12 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
 
         public async Task<Campeonato> Modificar(Campeonato Campeonato)
         {
-            var seleccionExistente = await context.Campeonatos.FindAsync(Campeonato.Id);
-            if (seleccionExistente == null)
+            var campeonatoExistente = await context.Campeonatos.FindAsync(Campeonato.Id);
+            if (campeonatoExistente == null)
             {
                 return null;
             }
-            context.Entry(seleccionExistente).CurrentValues.SetValues(Campeonato);
+            context.Entry(campeonatoExistente).CurrentValues.SetValues(Campeonato);
             await context.SaveChangesAsync();
             return await context.Campeonatos.FindAsync(Campeonato.Id);
         }

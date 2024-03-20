@@ -15,9 +15,9 @@
             return await repositorio.Agregar(Seleccion);
         }
 
-        public Task<bool> Eliminar(int Id)
+        public async Task<bool> Eliminar(int Id)
         {
-            throw new NotImplementedException();
+            return await repositorio.Eliminar(Id);
         }
 
         public async Task<Seleccion> Modificar(Seleccion Seleccion)

@@ -10,24 +10,24 @@ namespace CampeonatosFifa.Aplicacion
             this.repositorio = repositorio;
         }
 
-        public Task<Campeonato> Agregar(Campeonato Campeonato)
+        public async Task<Campeonato> Agregar(Campeonato Campeonato)
         {
-            throw new NotImplementedException();
+            return await repositorio.Agregar(Campeonato);
         }
 
-        public Task<bool> Eliminar(int Id)
+        public async Task<bool> Eliminar(int Id)
         {
-            throw new NotImplementedException();
+            return await repositorio.Eliminar(Id);
         }
 
-        public Task<Campeonato> Modificar(Campeonato Campeonato)
+        public async Task<Campeonato> Modificar(Campeonato Campeonato)
         {
-            throw new NotImplementedException();
+            return await repositorio.Modificar(Campeonato);
         }
 
-        public Task<Campeonato> Obtener(int Id)
+        public async Task<Campeonato> Obtener(int Id)
         {
-            throw new NotImplementedException();
+            return await repositorio.Obtener(Id);
         }
 
         public async Task<IEnumerable<Campeonato>> ObtenerTodos()
