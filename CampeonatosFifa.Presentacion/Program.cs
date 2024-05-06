@@ -10,6 +10,16 @@ var mapperConfig = new MapperConfiguration(cfg =>
     //cfg.AddProfile<MappingProfile>();
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PoliticaCors", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 IMapper mapper=new Mapper(mapperConfig);
 builder.Services.AddSingleton(mapper);
 
@@ -37,5 +47,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors("PoliticaCors");
 
 app.Run();
