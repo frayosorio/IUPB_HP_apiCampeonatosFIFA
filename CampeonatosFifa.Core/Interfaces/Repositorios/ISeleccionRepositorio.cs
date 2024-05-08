@@ -12,5 +12,7 @@
 
         Task<bool> Eliminar(int Id);
 
+        Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato);
+
     }
 }

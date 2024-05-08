@@ -25,6 +25,15 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
             return Seleccion;
         }
 
+        public async Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato)
+        {
+            return await context.Selecciones
+                                .Where(item => (Tipo == 0 && item.Nombre.Contains(Dato)) ||
+                                                (Tipo == 1 && item.Entidad.Contains(Dato))
+                                )
+                                .ToListAsync();
+        }
+
         public async Task<bool> Eliminar(int Id)
         {
             var seleccionExistente = await context.Selecciones.FindAsync(Id);

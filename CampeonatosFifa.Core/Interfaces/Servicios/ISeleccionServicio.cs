@@ -11,5 +11,7 @@
         Task<Seleccion> Obtener(int Id);
 
         Task<IEnumerable<Seleccion>> ObtenerTodos();
+
+        Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato);
     }
 }

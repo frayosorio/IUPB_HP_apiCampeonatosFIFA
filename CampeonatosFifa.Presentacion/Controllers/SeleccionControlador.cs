@@ -24,6 +24,12 @@
             return Ok(await servicio.Obtener(Id));
         }
 
+        [HttpGet("buscar/{Tipo}/{Dato}")]
+        public async Task<ActionResult<IEnumerable<Seleccion>>> Buscar(int Tipo, string Dato)
+        {
+            return Ok(await servicio.Buscar(Tipo, Dato));
+        }
+
         [HttpPost("agregar")]
         public async Task<ActionResult<Seleccion>> Agregar([FromBody] Seleccion Seleccion)
         {

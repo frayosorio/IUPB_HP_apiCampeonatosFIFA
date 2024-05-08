@@ -15,6 +15,11 @@
             return await repositorio.Agregar(Seleccion);
         }
 
+        public async Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato)
+        {
+            return await repositorio.Buscar(Tipo, Dato);
+        }
+
         public async Task<bool> Eliminar(int Id)
         {
             return await repositorio.Eliminar(Id);
