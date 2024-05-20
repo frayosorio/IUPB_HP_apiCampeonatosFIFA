@@ -28,10 +28,16 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
             {
                 return false;
             }
-
-            context.Campeonatos.Remove(campeonatoExistente);
-            await context.SaveChangesAsync();
-            return true;
+            try
+            {
+                context.Campeonatos.Remove(campeonatoExistente);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public async Task<Campeonato> Modificar(Campeonato Campeonato)

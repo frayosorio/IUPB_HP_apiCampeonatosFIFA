@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CampeonatosFifa.Aplicacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30bff079e7585790fd673a21d71bf38cc111df4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b0ab0031e827365ea453deafb0e43b541e82cf7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CampeonatosFifa.Aplicacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CampeonatosFifa.Aplicacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

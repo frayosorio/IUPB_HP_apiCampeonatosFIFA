@@ -41,10 +41,16 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
             {
                 return false;
             }
-
-            context.Selecciones.Remove(seleccionExistente);
-            await context.SaveChangesAsync();
-            return true;
+            try
+            {
+                context.Selecciones.Remove(seleccionExistente);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
         public async Task<Seleccion> Modificar(Seleccion Seleccion)
