@@ -12,5 +12,7 @@
         Task<Campeonato> Modificar(Campeonato Campeonato);
 
         Task<bool> Eliminar(int Id);
+
+        Task<IEnumerable<Campeonato>> Buscar(int Tipo, string Dato);
     }
 }

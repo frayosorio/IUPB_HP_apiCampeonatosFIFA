@@ -34,5 +34,10 @@ namespace CampeonatosFifa.Aplicacion
         {
             return await repositorio.ObtenerTodos();
         }
+
+        public async Task<IEnumerable<Campeonato>> Buscar(int Tipo, string Dato)
+        {
+            return await repositorio.Buscar(Tipo, Dato);
+        }
     }
 }

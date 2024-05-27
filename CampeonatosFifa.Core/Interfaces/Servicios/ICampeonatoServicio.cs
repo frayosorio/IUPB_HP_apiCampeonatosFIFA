@@ -12,5 +12,7 @@
 
         Task<IEnumerable<Campeonato>> ObtenerTodos();
 
+        Task<IEnumerable<Campeonato>> Buscar(int Tipo, string Dato);
+
     }
 }

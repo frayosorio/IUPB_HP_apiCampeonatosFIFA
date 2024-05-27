@@ -25,13 +25,13 @@
         }
 
         [HttpPost("agregar")]
-        public async Task<ActionResult<Seleccion>> Agregar([FromBody] Campeonato Campeonato)
+        public async Task<ActionResult<Campeonato>> Agregar([FromBody] Campeonato Campeonato)
         {
             return Ok(await servicio.Agregar(Campeonato));
         }
 
         [HttpPut("modificar")]
-        public async Task<ActionResult<Seleccion>> Modificar([FromBody] Campeonato Campeonato)
+        public async Task<ActionResult<Campeonato>> Modificar([FromBody] Campeonato Campeonato)
         {
             return Ok(await servicio.Modificar(Campeonato));
         }
@@ -42,6 +42,11 @@
             return Ok(await servicio.Eliminar(Id));
         }
 
+        [HttpGet("buscar/{Tipo}/{Dato}")]
+        public async Task<ActionResult<IEnumerable<Campeonato>>> Buscar(int Tipo, string Dato)
+        {
+            return Ok(await servicio.Buscar(Tipo, Dato));
+        }
 
     }
 }

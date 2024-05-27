@@ -59,7 +59,19 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
 
         public async Task<IEnumerable<Campeonato>> ObtenerTodos()
         {
-            return await context.Campeonatos.ToArrayAsync();
+            return await context.Campeonatos.
+                                    Include(e => e.Seleccion)
+                                    .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Campeonato>> Buscar(int Tipo, string Dato)
+        {
+            return await context.Campeonatos
+                                .Where(item => (Tipo == 0 && item.Nombre.Contains(Dato)) ||
+                                                (Tipo == 1 && item.Año.ToString().Contains(Dato))
+                                )
+                                .Include(e => e.Seleccion)
+                                .ToListAsync();
         }
     }
 }
