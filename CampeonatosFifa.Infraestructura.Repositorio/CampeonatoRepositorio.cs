@@ -49,7 +49,8 @@ namespace CampeonatosFifa.Infraestructura.Repositorio
             }
             context.Entry(campeonatoExistente).CurrentValues.SetValues(Campeonato);
             await context.SaveChangesAsync();
-            return await context.Campeonatos.FindAsync(Campeonato.Id);
+            return await context.Campeonatos.Include(e => e.Seleccion)
+                                            .FirstOrDefaultAsync(item => item.Id == Campeonato.Id);
         }
 
         public async Task<Campeonato> Obtener(int Id)
