@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampeonatosFIFA.Dominio", "CampeonatosFIFA.Dominio\CampeonatosFIFA.Dominio.csproj", "{AC646F7A-0961-4EDB-9EDF-9AD8ABF0D02C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampeonatosFIFA.Dominio", "CampeonatosFIFA.Dominio\CampeonatosFIFA.Dominio.csproj", "{AC646F7A-0961-4EDB-9EDF-9AD8ABF0D02C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampeonatosFIFA.Infraestrutura.Persistencia", "CampeonatosFIFA.Infraestrutura.Persistencia\CampeonatosFIFA.Infraestrutura.Persistencia.csproj", "{6CA0AAD1-3BE3-49F6-B7AA-D60FA93AB81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampeonatosFIFA.Infraestructura.Repositorio", "CampeonatosFIFA.Infraestructura.Repositorio\CampeonatosFIFA.Infraestructura.Repositorio.csproj", "{FDEAC5F4-B1AF-4A73-9D4D-CC52861FC9CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampeonatosFIFA.Core", "CampeonatosFIFA.Core\CampeonatosFIFA.Core.csproj", "{603A30B7-AA29-4E36-AD7A-99BB87A54A28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{AC646F7A-0961-4EDB-9EDF-9AD8ABF0D02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC646F7A-0961-4EDB-9EDF-9AD8ABF0D02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC646F7A-0961-4EDB-9EDF-9AD8ABF0D02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA0AAD1-3BE3-49F6-B7AA-D60FA93AB81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA0AAD1-3BE3-49F6-B7AA-D60FA93AB81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA0AAD1-3BE3-49F6-B7AA-D60FA93AB81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA0AAD1-3BE3-49F6-B7AA-D60FA93AB81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEAC5F4-B1AF-4A73-9D4D-CC52861FC9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEAC5F4-B1AF-4A73-9D4D-CC52861FC9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEAC5F4-B1AF-4A73-9D4D-CC52861FC9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEAC5F4-B1AF-4A73-9D4D-CC52861FC9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603A30B7-AA29-4E36-AD7A-99BB87A54A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603A30B7-AA29-4E36-AD7A-99BB87A54A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603A30B7-AA29-4E36-AD7A-99BB87A54A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603A30B7-AA29-4E36-AD7A-99BB87A54A28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
