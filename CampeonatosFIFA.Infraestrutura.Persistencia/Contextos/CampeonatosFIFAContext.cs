@@ -19,6 +19,7 @@ namespace CampeonatosFIFA.Infraestrutura.Persistencia.Contextos
                 seleccion.HasKey(s => s.Id);
                 seleccion.HasIndex(s => s.Nombre).IsUnique();
             });
+
             modelBuilder.Entity<Campeonato>(campeonato =>
             {
                 campeonato.HasKey(s => s.Id);

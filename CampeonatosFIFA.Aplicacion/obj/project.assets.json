@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "CampeonatosFIFA.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CampeonatosFIFA.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CampeonatosFIFA.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CampeonatosFIFA.Core.dll": {}
+        }
+      },
+      "CampeonatosFIFA.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CampeonatosFIFA.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CampeonatosFIFA.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CampeonatosFIFA.Core/1.0.0": {
+      "type": "project",
+      "path": "../CampeonatosFIFA.Core/CampeonatosFIFA.Core.csproj",
+      "msbuildProject": "../CampeonatosFIFA.Core/CampeonatosFIFA.Core.csproj"
+    },
+    "CampeonatosFIFA.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../CampeonatosFIFA.Dominio/CampeonatosFIFA.Dominio.csproj",
+      "msbuildProject": "../CampeonatosFIFA.Dominio/CampeonatosFIFA.Dominio.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "CampeonatosFIFA.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\VTC\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\VTC\\Downloads\\Borrar\\Cursos\\IU Pascual Bravo\\HP III\\Curso 2024-2\\Ejercicios\\apiCampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\CampeonatosFIFA.Aplicacion.csproj",
+      "projectName": "CampeonatosFIFA.Aplicacion",
+      "projectPath": "C:\\Users\\VTC\\Downloads\\Borrar\\Cursos\\IU Pascual Bravo\\HP III\\Curso 2024-2\\Ejercicios\\apiCampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\CampeonatosFIFA.Aplicacion.csproj",
+      "packagesPath": "C:\\Users\\VTC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VTC\\Downloads\\Borrar\\Cursos\\IU Pascual Bravo\\HP III\\Curso 2024-2\\Ejercicios\\apiCampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\VTC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\VTC\\Downloads\\Borrar\\Cursos\\IU Pascual Bravo\\HP III\\Curso 2024-2\\Ejercicios\\apiCampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj": {
+              "projectPath": "C:\\Users\\VTC\\Downloads\\Borrar\\Cursos\\IU Pascual Bravo\\HP III\\Curso 2024-2\\Ejercicios\\apiCampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

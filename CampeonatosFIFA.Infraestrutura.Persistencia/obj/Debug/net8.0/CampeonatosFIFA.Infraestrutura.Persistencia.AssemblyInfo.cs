@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CampeonatosFIFA.Infraestrutura.Persistencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+370a59c1739406871a8004c94d0c8bd87e23b159")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4775b976ad2551330c6aecac5f95f8f45527b8e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CampeonatosFIFA.Infraestrutura.Persistencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CampeonatosFIFA.Infraestrutura.Persistencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

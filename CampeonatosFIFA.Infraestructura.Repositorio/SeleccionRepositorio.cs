@@ -34,9 +34,9 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
             throw new NotImplementedException();
         }
 
-        public Task<Seleccion> Obtener(int Id)
+        public async Task<Seleccion> Obtener(int Id)
         {
-            throw new NotImplementedException();
+            return await context.Selecciones.FindAsync(Id);
         }
 
         public async Task<IEnumerable<Seleccion>> ObtenerTodos()
