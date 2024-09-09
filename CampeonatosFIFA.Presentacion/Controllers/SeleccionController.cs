@@ -1,12 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CampeonatosFIFA.Core.Interfaces.Repositorios;
+using CampeonatosFIFA.Core.Interfaces.Servicios;
+using CampeonatosFIFA.Dominio.Entidades;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CampeonatosFIFA.Presentacion.Controllers
 {
-    public class SeleccionController : Controller
+    [ApiController]
+    [Route("api/selecciones")]
+    public class SeleccionController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly ISeleccionServicio servicio;
+
+          public SeleccionController(ISeleccionServicio servicio)
         {
-            return View();
+            this.servicio = servicio;
         }
+
+
+        [HttpGet("listar")]
+        public async Task<ActionResult<IEnumerable<Seleccion>>> ObtenerTodos()
+        {
+            return Ok(await servicio.ObtenerTodos());
+        }
+
+
     }
 }

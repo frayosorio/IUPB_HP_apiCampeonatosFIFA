@@ -1,0 +1,35 @@
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Aplicacion.deps.json
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Aplicacion.dll
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Aplicacion.pdb
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Core.dll
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Dominio.dll
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Core.pdb
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Dominio.pdb
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.AssemblyInfo.cs
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.csproj.CopyComplete
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.dll
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\refint\CampeonatosFIFA.Aplicacion.dll
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.pdb
+C:\Users\VTC\Downloads\Borrar\Cursos\IU Pascual Bravo\HP III\Curso 2024-2\Ejercicios\apiCampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\ref\CampeonatosFIFA.Aplicacion.dll
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Aplicacion.deps.json
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Aplicacion.dll
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Aplicacion.pdb
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Core.dll
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Dominio.dll
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Core.pdb
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\bin\Debug\net8.0\CampeonatosFIFA.Dominio.pdb
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.csproj.AssemblyReference.cache
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.AssemblyInfoInputs.cache
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.AssemblyInfo.cs
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.csproj.CoreCompileInputs.cache
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.sourcelink.json
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.csproj.CopyComplete
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.dll
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\refint\CampeonatosFIFA.Aplicacion.dll
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\CampeonatosFIFA.Aplicacion.pdb
+D:\Catedra\IU Pascual Bravo\Herramientas de Programacion III\Cursos\Curso 2024-2\Ejercicios\CampeonatosFIFA\CampeonatosFIFA.Aplicacion\obj\Debug\net8.0\ref\CampeonatosFIFA.Aplicacion.dll
