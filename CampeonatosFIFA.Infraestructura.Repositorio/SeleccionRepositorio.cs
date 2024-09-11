@@ -14,9 +14,11 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
             this.context = context;
         }
 
-        public Task<Seleccion> Agregar(Seleccion Seleccion)
+        public async Task<Seleccion> Agregar(Seleccion Seleccion)
         {
-            throw new NotImplementedException();
+            context.Selecciones.Add(Seleccion);
+            await context.SaveChangesAsync();
+            return Seleccion;
         }
 
         public Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)

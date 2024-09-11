@@ -23,6 +23,12 @@ namespace CampeonatosFIFA.Presentacion.Controllers
             return Ok(await servicio.ObtenerTodos());
         }
 
+        [HttpPost("agregar")]
+        public async Task<ActionResult<Seleccion>> Agregar(Seleccion Seleccion)
+        {
+            return Ok(await servicio.Agregar(Seleccion));
+        }
+
 
     }
 }

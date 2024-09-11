@@ -16,7 +16,7 @@ namespace CampeonatosFIFA.Aplicacion
 
         public Task<Seleccion> Agregar(Seleccion Seleccion)
         {
-            throw new NotImplementedException();
+            return repositorio.Agregar(Seleccion);
         }
 
         public Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)
