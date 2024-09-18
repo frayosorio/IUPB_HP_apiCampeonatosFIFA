@@ -21,19 +21,43 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
             return Seleccion;
         }
 
-        public Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)
+        public async Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)
         {
-            throw new NotImplementedException();
+            return await context.Selecciones
+                                    .Where(item => (IndiceDato == 0 && item.Nombre.Contains(Dato)) ||
+                                    (IndiceDato == 1 && item.Entidad.Contains(Dato)))
+                                    .ToListAsync();
         }
 
-        public Task<bool> Eliminar(int Id)
+        public async Task<bool> Eliminar(int Id)
         {
-            throw new NotImplementedException();
+            var seleccionExistente = await context.Selecciones.FindAsync(Id);
+            if (seleccionExistente == null)
+            {
+                return false;
+            }
+            try
+            {
+                context.Selecciones.Remove(seleccionExistente);
+                await context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        public Task<Seleccion> Modificar(Seleccion Seleccion)
+        public async Task<Seleccion> Modificar(Seleccion Seleccion)
         {
-            throw new NotImplementedException();
+            var seleccionExistente = await context.Selecciones.FindAsync(Seleccion.Id);
+            if (seleccionExistente == null)
+            {
+                return null;
+            }
+            context.Entry(seleccionExistente).CurrentValues.SetValues(Seleccion);
+            await context.SaveChangesAsync();
+            return await context.Selecciones.FindAsync(Seleccion.Id);
         }
 
         public async Task<Seleccion> Obtener(int Id)

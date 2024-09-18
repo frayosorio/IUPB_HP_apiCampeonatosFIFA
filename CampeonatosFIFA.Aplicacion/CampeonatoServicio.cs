@@ -4,22 +4,21 @@ using CampeonatosFIFA.Dominio.Entidades;
 
 namespace CampeonatosFIFA.Aplicacion
 {
-    public class SeleccionServicio : ISeleccionServicio
+    public class CampeonatoServicio : ICampeonatoServicio
     {
+        private readonly ICampeonatoRepositorio repositorio;
 
-        private readonly ISeleccionRepositorio repositorio;
-
-        public SeleccionServicio(ISeleccionRepositorio repositorio)
+        public CampeonatoServicio(ICampeonatoRepositorio repositorio)
         {
             this.repositorio = repositorio;
         }
 
-        public Task<Seleccion> Agregar(Seleccion Seleccion)
+        public Task<Campeonato> Agregar(Campeonato Campeonato)
         {
-            return repositorio.Agregar(Seleccion);
+            return repositorio.Agregar(Campeonato);
         }
 
-        public Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)
+        public Task<IEnumerable<Campeonato>> Buscar(int IndiceDato, string Dato)
         {
             return repositorio.Buscar(IndiceDato, Dato);
         }
@@ -29,17 +28,17 @@ namespace CampeonatosFIFA.Aplicacion
             return repositorio.Eliminar(Id);
         }
 
-        public Task<Seleccion> Modificar(Seleccion Seleccion)
+        public Task<Campeonato> Modificar(Campeonato Campeonato)
         {
-            return repositorio.Modificar(Seleccion);
+            return repositorio.Modificar(Campeonato);
         }
 
-        public Task<Seleccion> Obtener(int Id)
+        public Task<Campeonato> Obtener(int Id)
         {
             return repositorio.Obtener(Id);
         }
 
-        public Task<IEnumerable<Seleccion>> ObtenerTodos()
+        public Task<IEnumerable<Campeonato>> ObtenerTodos()
         {
             return repositorio.ObtenerTodos();
         }

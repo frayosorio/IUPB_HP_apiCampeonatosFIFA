@@ -19,9 +19,11 @@ namespace CampeonatosFIFA.Presentacion.InyeccionDependencias
 
             //agregar los repositorios
             servicios.AddTransient<ISeleccionRepositorio, SeleccionRepositorio>();
+            servicios.AddTransient<ICampeonatoRepositorio, CampeonatoRepositorio>();
 
             //agregar los servicios
             servicios.AddTransient<ISeleccionServicio, SeleccionServicio>();
+            servicios.AddTransient<ICampeonatoServicio, CampeonatoServicio>();
 
             return servicios;
         }

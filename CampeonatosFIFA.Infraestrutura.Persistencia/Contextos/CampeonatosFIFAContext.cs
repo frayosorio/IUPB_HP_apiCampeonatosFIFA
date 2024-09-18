@@ -1,5 +1,4 @@
-﻿
-using CampeonatosFIFA.Dominio.Entidades;
+﻿using CampeonatosFIFA.Dominio.Entidades;
 using Microsoft.EntityFrameworkCore;
 
 namespace CampeonatosFIFA.Infraestrutura.Persistencia.Contextos
@@ -11,6 +10,7 @@ namespace CampeonatosFIFA.Infraestrutura.Persistencia.Contextos
         }
 
         public DbSet<Seleccion> Selecciones { get; set; }
+        public DbSet<Campeonato> Campeonatos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
