@@ -1,19 +1,17 @@
-﻿using CampeonatosFIFA.Dominio.Entidades;
-
-namespace CampeonatosFIFA.Core.Interfaces.Servicios
+﻿namespace CampeonatosFifa.Core.Interfaces.Servicios
 {
     public interface ISeleccionServicio
     {
-        Task<IEnumerable<Seleccion>> ObtenerTodos();
-
-        Task<Seleccion> Obtener(int Id);
-
-        Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, String Dato);
-
         Task<Seleccion> Agregar(Seleccion Seleccion);
 
         Task<Seleccion> Modificar(Seleccion Seleccion);
 
         Task<bool> Eliminar(int Id);
+
+        Task<Seleccion> Obtener(int Id);
+
+        Task<IEnumerable<Seleccion>> ObtenerTodos();
+
+        Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato);
     }
 }

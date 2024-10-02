@@ -8,15 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CampeonatosFIFA.Aplicacion\CampeonatosFIFA.Aplicacion.csproj" />
-    <ProjectReference Include="..\CampeonatosFIFA.Core\CampeonatosFIFA.Core.csproj" />
-    <ProjectReference Include="..\CampeonatosFIFA.Dominio\CampeonatosFIFA.Dominio.csproj" />
-    <ProjectReference Include="..\CampeonatosFIFA.Infraestructura.Repositorio\CampeonatosFIFA.Infraestructura.Repositorio.csproj" />
-    <ProjectReference Include="..\CampeonatosFIFA.Infraestrutura.Persistencia\CampeonatosFIFA.Infraestrutura.Persistencia.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Aplicacion\CampeonatosFifa.Aplicacion.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Core\CampeonatosFifa.Core.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Dominio\CampeonatosFifa.Dominio.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Infraestructura.Persistencia\CampeonatosFifa.Infraestructura.Persistencia.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Infraestructura.Repositorio\CampeonatosFifa.Infraestructura.Repositorio.csproj" />
   </ItemGroup>
 
 </Project>

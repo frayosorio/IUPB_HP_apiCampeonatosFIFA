@@ -7,9 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CampeonatosFIFA.Core\CampeonatosFIFA.Core.csproj" />
-    <ProjectReference Include="..\CampeonatosFIFA.Dominio\CampeonatosFIFA.Dominio.csproj" />
-    <ProjectReference Include="..\CampeonatosFIFA.Infraestrutura.Persistencia\CampeonatosFIFA.Infraestrutura.Persistencia.csproj" />
+    <None Remove="SeleccionRepositorio.cs~RF1484792d.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CampeonatosFifa.Core\CampeonatosFifa.Core.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Dominio\CampeonatosFifa.Dominio.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Infraestructura.Persistencia\CampeonatosFifa.Infraestructura.Persistencia.csproj" />
   </ItemGroup>
 
 </Project>

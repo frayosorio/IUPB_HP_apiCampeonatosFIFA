@@ -1,6 +1,4 @@
-﻿using CampeonatosFIFA.Dominio.Entidades;
-
-namespace CampeonatosFIFA.Core.Interfaces.Repositorios
+﻿namespace CampeonatosFifa.Core.Interfaces.Repositorios
 {
     public interface ISeleccionRepositorio
     {
@@ -8,12 +6,13 @@ namespace CampeonatosFIFA.Core.Interfaces.Repositorios
 
         Task<Seleccion> Obtener(int Id);
 
-        Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, String Dato);
-
         Task<Seleccion> Agregar(Seleccion Seleccion);
 
         Task<Seleccion> Modificar(Seleccion Seleccion);
 
         Task<bool> Eliminar(int Id);
+
+        Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato);
+
     }
 }

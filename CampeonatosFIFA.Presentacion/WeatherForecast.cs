@@ -1,4 +1,4 @@
-namespace CampeonatosFIFA.Presentacion
+namespace CampeonatosFifa.Presentacion
 {
     public class WeatherForecast
     {

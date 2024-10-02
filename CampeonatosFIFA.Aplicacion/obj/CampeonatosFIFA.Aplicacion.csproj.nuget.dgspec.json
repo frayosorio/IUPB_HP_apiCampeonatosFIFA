@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\CampeonatosFIFA.Aplicacion.csproj": {}
+    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Aplicacion\\CampeonatosFifa.Aplicacion.csproj": {}
   },
   "projects": {
-    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\CampeonatosFIFA.Aplicacion.csproj": {
+    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Aplicacion\\CampeonatosFifa.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\CampeonatosFIFA.Aplicacion.csproj",
-        "projectName": "CampeonatosFIFA.Aplicacion",
-        "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\CampeonatosFIFA.Aplicacion.csproj",
+        "projectUniqueName": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Aplicacion\\CampeonatosFifa.Aplicacion.csproj",
+        "projectName": "CampeonatosFifa.Aplicacion",
+        "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Aplicacion\\CampeonatosFifa.Aplicacion.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Aplicacion\\obj\\",
+        "outputPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj": {
-                "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj"
+              "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Core\\CampeonatosFifa.Core.csproj": {
+                "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Core\\CampeonatosFifa.Core.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj": {
+    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Core\\CampeonatosFifa.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj",
-        "projectName": "CampeonatosFIFA.Core",
-        "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Core\\CampeonatosFIFA.Core.csproj",
+        "projectUniqueName": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Core\\CampeonatosFifa.Core.csproj",
+        "projectName": "CampeonatosFifa.Core",
+        "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Core\\CampeonatosFifa.Core.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Core\\obj\\",
+        "outputPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -99,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Dominio\\CampeonatosFIFA.Dominio.csproj": {
-                "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Dominio\\CampeonatosFIFA.Dominio.csproj"
+              "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Dominio\\CampeonatosFifa.Dominio.csproj": {
+                "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Dominio\\CampeonatosFifa.Dominio.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Dominio\\CampeonatosFIFA.Dominio.csproj": {
+    "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Dominio\\CampeonatosFifa.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Dominio\\CampeonatosFIFA.Dominio.csproj",
-        "projectName": "CampeonatosFIFA.Dominio",
-        "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Dominio\\CampeonatosFIFA.Dominio.csproj",
+        "projectUniqueName": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Dominio\\CampeonatosFifa.Dominio.csproj",
+        "projectName": "CampeonatosFifa.Dominio",
+        "projectPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Dominio\\CampeonatosFifa.Dominio.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFIFA.Dominio\\obj\\",
+        "outputPath": "D:\\Catedra\\IU Pascual Bravo\\Herramientas de Programacion III\\Cursos\\Curso 2024-2\\Ejercicios\\CampeonatosFIFA\\CampeonatosFifa.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

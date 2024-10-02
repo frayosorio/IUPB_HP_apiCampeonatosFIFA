@@ -1,15 +1,19 @@
-﻿using CampeonatosFIFA.Core.Interfaces.Repositorios;
-using CampeonatosFIFA.Dominio.Entidades;
-using CampeonatosFIFA.Infraestrutura.Persistencia.Contextos;
-using Microsoft.EntityFrameworkCore;
+﻿
 
-namespace CampeonatosFIFA.Infraestructura.Repositorio
+
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Globalization;
+
+namespace CampeonatosFifa.Infraestructura.Repositorio
 {
     public class SeleccionRepositorio : ISeleccionRepositorio
     {
-        private readonly CampeonatosFIFAContext context;
+        private readonly CampeonatosFifaContext context;
 
-        public SeleccionRepositorio(CampeonatosFIFAContext context)
+
+        public SeleccionRepositorio(CampeonatosFifaContext context,
+            IMapper mapper)
         {
             this.context = context;
         }
@@ -21,12 +25,13 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
             return Seleccion;
         }
 
-        public async Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)
+        public async Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato)
         {
             return await context.Selecciones
-                                    .Where(item => (IndiceDato == 0 && item.Nombre.Contains(Dato)) ||
-                                    (IndiceDato == 1 && item.Entidad.Contains(Dato)))
-                                    .ToListAsync();
+                                .Where(item => (Tipo == 0 && item.Nombre.Contains(Dato)) ||
+                                                (Tipo == 1 && item.Entidad.Contains(Dato))
+                                )
+                                .ToListAsync();
         }
 
         public async Task<bool> Eliminar(int Id)

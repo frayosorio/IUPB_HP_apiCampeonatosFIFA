@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampeonatosFifa.Dominio", "CampeonatosFifa.Dominio\CampeonatosFifa.Dominio.csproj", "{AB72A6C5-07AB-4509-BB41-925FDBA96099}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampeonatosFifa.Core", "CampeonatosFifa.Core\CampeonatosFifa.Core.csproj", "{BD293A9F-5A80-47DD-8C07-CCEC7E628CA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampeonatosFifa.Infraestructura.Persistencia", "CampeonatosFifa.Infraestructura.Persistencia\CampeonatosFifa.Infraestructura.Persistencia.csproj", "{8CAC159F-AB26-49C1-9AFE-BC3DCA111A40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CampeonatosFifa.Infraestructura.Repositorio", "CampeonatosFifa.Infraestructura.Repositorio\CampeonatosFifa.Infraestructura.Repositorio.csproj", "{51F216F1-1932-4C4D-B7F9-B08E0C5E49BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampeonatosFifa.Aplicacion", "CampeonatosFifa.Aplicacion\CampeonatosFifa.Aplicacion.csproj", "{F7B6FA08-95F3-4ADB-94C6-D40757BFFAD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampeonatosFifa.Presentacion", "CampeonatosFifa.Presentacion\CampeonatosFifa.Presentacion.csproj", "{04E7115B-6F86-4DA0-A73D-1701105F8FF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB72A6C5-07AB-4509-BB41-925FDBA96099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB72A6C5-07AB-4509-BB41-925FDBA96099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB72A6C5-07AB-4509-BB41-925FDBA96099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB72A6C5-07AB-4509-BB41-925FDBA96099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD293A9F-5A80-47DD-8C07-CCEC7E628CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD293A9F-5A80-47DD-8C07-CCEC7E628CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD293A9F-5A80-47DD-8C07-CCEC7E628CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD293A9F-5A80-47DD-8C07-CCEC7E628CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CAC159F-AB26-49C1-9AFE-BC3DCA111A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CAC159F-AB26-49C1-9AFE-BC3DCA111A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CAC159F-AB26-49C1-9AFE-BC3DCA111A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CAC159F-AB26-49C1-9AFE-BC3DCA111A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F216F1-1932-4C4D-B7F9-B08E0C5E49BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F216F1-1932-4C4D-B7F9-B08E0C5E49BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F216F1-1932-4C4D-B7F9-B08E0C5E49BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F216F1-1932-4C4D-B7F9-B08E0C5E49BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B6FA08-95F3-4ADB-94C6-D40757BFFAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B6FA08-95F3-4ADB-94C6-D40757BFFAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B6FA08-95F3-4ADB-94C6-D40757BFFAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B6FA08-95F3-4ADB-94C6-D40757BFFAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E7115B-6F86-4DA0-A73D-1701105F8FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E7115B-6F86-4DA0-A73D-1701105F8FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E7115B-6F86-4DA0-A73D-1701105F8FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E7115B-6F86-4DA0-A73D-1701105F8FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F420097-36ED-451E-A920-0A4078D9AC3A}
+	EndGlobalSection
+EndGlobal

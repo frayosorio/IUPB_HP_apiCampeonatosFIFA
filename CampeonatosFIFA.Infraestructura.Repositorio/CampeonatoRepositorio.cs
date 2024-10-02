@@ -1,16 +1,15 @@
-﻿using CampeonatosFIFA.Core.Interfaces.Repositorios;
-using CampeonatosFIFA.Dominio.Entidades;
-using CampeonatosFIFA.Infraestrutura.Persistencia.Contextos;
+﻿
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
-namespace CampeonatosFIFA.Infraestructura.Repositorio
+namespace CampeonatosFifa.Infraestructura.Repositorio
 {
     public class CampeonatoRepositorio : ICampeonatoRepositorio
     {
+        private CampeonatosFifaContext context;
 
-        private readonly CampeonatosFIFAContext context;
 
-        public CampeonatoRepositorio(CampeonatosFIFAContext context)
+        public CampeonatoRepositorio(CampeonatosFifaContext context)
         {
             this.context = context;
         }
@@ -22,25 +21,16 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
             return Campeonato;
         }
 
-        public async Task<IEnumerable<Campeonato>> Buscar(int IndiceDato, string Dato)
-        {
-            return await context.Campeonatos
-                                    .Where(item => (IndiceDato == 0 && item.Nombre.Contains(Dato)) ||
-                                    (IndiceDato == 1 && item.Año==int.Parse(Dato)) ||
-                                    (IndiceDato == 2 && item.Seleccion.Nombre.Contains(Dato)))
-                                    .ToListAsync();
-        }
-
         public async Task<bool> Eliminar(int Id)
         {
-            var CampeonatoExistente = await context.Campeonatos.FindAsync(Id);
-            if (CampeonatoExistente == null)
+            var campeonatoExistente = await context.Campeonatos.FindAsync(Id);
+            if (campeonatoExistente == null)
             {
                 return false;
             }
             try
             {
-                context.Campeonatos.Remove(CampeonatoExistente);
+                context.Campeonatos.Remove(campeonatoExistente);
                 await context.SaveChangesAsync();
                 return true;
             }
@@ -52,12 +42,12 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
 
         public async Task<Campeonato> Modificar(Campeonato Campeonato)
         {
-            var CampeonatoExistente = await context.Campeonatos.FindAsync(Campeonato.Id);
-            if (CampeonatoExistente == null)
+            var campeonatoExistente = await context.Campeonatos.FindAsync(Campeonato.Id);
+            if (campeonatoExistente == null)
             {
                 return null;
             }
-            context.Entry(CampeonatoExistente).CurrentValues.SetValues(Campeonato);
+            context.Entry(campeonatoExistente).CurrentValues.SetValues(Campeonato);
             await context.SaveChangesAsync();
             return await context.Campeonatos.FindAsync(Campeonato.Id);
         }
@@ -69,7 +59,19 @@ namespace CampeonatosFIFA.Infraestructura.Repositorio
 
         public async Task<IEnumerable<Campeonato>> ObtenerTodos()
         {
-            return await context.Campeonatos.ToArrayAsync();
+            return await context.Campeonatos.
+                                    Include(e => e.Seleccion)
+                                    .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Campeonato>> Buscar(int Tipo, string Dato)
+        {
+            return await context.Campeonatos
+                                .Where(item => (Tipo == 0 && item.Nombre.Contains(Dato)) ||
+                                                (Tipo == 1 && item.Año.ToString().Contains(Dato))
+                                )
+                                .Include(e => e.Seleccion)
+                                .ToListAsync();
         }
     }
 }

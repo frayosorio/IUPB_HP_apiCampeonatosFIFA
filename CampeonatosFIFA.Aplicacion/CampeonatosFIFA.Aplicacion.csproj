@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CampeonatosFIFA.Core\CampeonatosFIFA.Core.csproj" />
+    <ProjectReference Include="..\CampeonatosFifa.Core\CampeonatosFifa.Core.csproj" />
   </ItemGroup>
 
 </Project>

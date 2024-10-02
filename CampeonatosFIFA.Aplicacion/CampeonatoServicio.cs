@@ -1,46 +1,43 @@
-﻿using CampeonatosFIFA.Core.Interfaces.Repositorios;
-using CampeonatosFIFA.Core.Interfaces.Servicios;
-using CampeonatosFIFA.Dominio.Entidades;
-
-namespace CampeonatosFIFA.Aplicacion
+﻿
+namespace CampeonatosFifa.Aplicacion
 {
     public class CampeonatoServicio : ICampeonatoServicio
     {
-        private readonly ICampeonatoRepositorio repositorio;
+        private ICampeonatoRepositorio repositorio;
 
         public CampeonatoServicio(ICampeonatoRepositorio repositorio)
         {
             this.repositorio = repositorio;
         }
 
-        public Task<Campeonato> Agregar(Campeonato Campeonato)
+        public async Task<Campeonato> Agregar(Campeonato Campeonato)
         {
-            return repositorio.Agregar(Campeonato);
+            return await repositorio.Agregar(Campeonato);
         }
 
-        public Task<IEnumerable<Campeonato>> Buscar(int IndiceDato, string Dato)
+        public async Task<bool> Eliminar(int Id)
         {
-            return repositorio.Buscar(IndiceDato, Dato);
+            return await repositorio.Eliminar(Id);
         }
 
-        public Task<bool> Eliminar(int Id)
+        public async Task<Campeonato> Modificar(Campeonato Campeonato)
         {
-            return repositorio.Eliminar(Id);
+            return await repositorio.Modificar(Campeonato);
         }
 
-        public Task<Campeonato> Modificar(Campeonato Campeonato)
+        public async Task<Campeonato> Obtener(int Id)
         {
-            return repositorio.Modificar(Campeonato);
+            return await repositorio.Obtener(Id);
         }
 
-        public Task<Campeonato> Obtener(int Id)
+        public async Task<IEnumerable<Campeonato>> ObtenerTodos()
         {
-            return repositorio.Obtener(Id);
+            return await repositorio.ObtenerTodos();
         }
 
-        public Task<IEnumerable<Campeonato>> ObtenerTodos()
+        public async Task<IEnumerable<Campeonato>> Buscar(int Tipo, string Dato)
         {
-            return repositorio.ObtenerTodos();
+            return await repositorio.Buscar(Tipo, Dato);
         }
     }
 }

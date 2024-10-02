@@ -1,47 +1,43 @@
-﻿using CampeonatosFIFA.Core.Interfaces.Repositorios;
-using CampeonatosFIFA.Core.Interfaces.Servicios;
-using CampeonatosFIFA.Dominio.Entidades;
-
-namespace CampeonatosFIFA.Aplicacion
+﻿namespace CampeonatosFifa.Aplicacion
 {
     public class SeleccionServicio : ISeleccionServicio
     {
 
-        private readonly ISeleccionRepositorio repositorio;
+        ISeleccionRepositorio repositorio;
 
         public SeleccionServicio(ISeleccionRepositorio repositorio)
         {
             this.repositorio = repositorio;
         }
 
-        public Task<Seleccion> Agregar(Seleccion Seleccion)
+        public async Task<Seleccion> Agregar(Seleccion Seleccion)
         {
-            return repositorio.Agregar(Seleccion);
+            return await repositorio.Agregar(Seleccion);
         }
 
-        public Task<IEnumerable<Seleccion>> Buscar(int IndiceDato, string Dato)
+        public async Task<IEnumerable<Seleccion>> Buscar(int Tipo, string Dato)
         {
-            return repositorio.Buscar(IndiceDato, Dato);
+            return await repositorio.Buscar(Tipo, Dato);
         }
 
-        public Task<bool> Eliminar(int Id)
+        public async Task<bool> Eliminar(int Id)
         {
-            return repositorio.Eliminar(Id);
+            return await repositorio.Eliminar(Id);
         }
 
-        public Task<Seleccion> Modificar(Seleccion Seleccion)
+        public async Task<Seleccion> Modificar(Seleccion Seleccion)
         {
-            return repositorio.Modificar(Seleccion);
+            return await repositorio.Modificar(Seleccion);
         }
 
-        public Task<Seleccion> Obtener(int Id)
+        public async Task<Seleccion> Obtener(int Id)
         {
-            return repositorio.Obtener(Id);
+            return await repositorio.Obtener(Id);
         }
 
-        public Task<IEnumerable<Seleccion>> ObtenerTodos()
+        public async Task<IEnumerable<Seleccion>> ObtenerTodos()
         {
-            return repositorio.ObtenerTodos();
+            return await repositorio.ObtenerTodos();
         }
     }
 }
